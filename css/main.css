@@ -32,6 +32,15 @@ object
   pointer-events: none;
 }
 
+/*Container - padding*/
+
+#container
+{
+  padding-bottom: 100px;
+}
+
+/*Container - padding*/
+
 /*FOOTER*/
 
 footer

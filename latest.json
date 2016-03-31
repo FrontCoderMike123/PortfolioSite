@@ -7,8 +7,8 @@
 			"Year":"2016",
 			"Set":false,
 			"Url":"http://michel-beaubien.com/easyEats/",
-			"SVG":"",
-			"PNG":"",
+			"SVG":"images/websites/EAlogo.svg",
+			"PNG":"images/websites/EAlogo.png",
 			"Desc":"Easy Eats is an App that I developed. The idea for this app came to me one day while I was cooking supper. Knowing how hard it is to budget your money for food, I came up with this idea to take your pocket change, and notify you of any restaurants in your area that you can afford to dine at. A lot went into this site to try and display Easy Eats full potential to be an AWESOME app! This website uses AngularJS, and is mobile ready. The Easy Eats App itself, is developed using the MEAN STACK! (OOOOOOOH YEAH!)."
 		},
 		{
@@ -17,8 +17,8 @@
 			"Year":"2016",
 			"Set":false,
 			"Url":"http://michel-beaubien.com/CastleRaiders/",
-			"SVG":"",
-			"PNG":"",
+			"SVG":"images/websites/castleRaiders.svg",
+			"PNG":"images/websites/castleRaiders.png",
 			"Desc":"As a team, we developed a 3D side scrolling video game called Castle Raiders. This game needed a website to promote it, this is the website. It's based in a castle / dungeon setting. This a mobile website, single page application, using Angular to make it all happen. I am using AngularJS to loop through content with ease, also to keep Active stats without having to blow a casket. I'm really loving AngularJS."
 		},
 		{
@@ -27,8 +27,8 @@
 			"Year":"2015",
 			"Set":false,
 			"Url":"http://michel-beaubien.com/hmdb/",
-			"SVG":"",
-			"PNG":"",
+			"SVG":"images/websites/HMDB.svg",
+			"PNG":"images/websites/HMDB.png",
 			"Desc":"This was a fun, but chalenging build. It's a database set up with over 200 titles. There is a 'Live Search' aspect implemented to the input field, with the help of AJAX & PHP, when you type into the search bar, it will give you results. Those results are movies that I've selected and entered into the database, 1 by 1. I hope to have 500 movies soon! Ontop of that, the 8 chosen 'Horror Slashers' are being called out by JSON calls. ENJOY!"
 		},
 		{
@@ -37,8 +37,8 @@
 			"Year":"2015 / Present",
 			"Set":false,
 			"Url":"http://paradiseproperties.info",
-			"SVG":"",
-			"PNG":"",
+			"SVG":"images/websites/paradise.svg",
+			"PNG":"images/websites/paradise.png",
 			"Desc":"This was a nice little project to get my fingers going! Simple yet elegant design, I took advantage of the 'Sea-Side' colours. I put in anywhere from 40 - 60 Hrs, more late nights, not complaining. The client wanted a website to display his skills in photography. I bring the paradise to you. I learned many new things, I hope you enjoy browsing!"
 		},
 		{
@@ -47,8 +47,8 @@
 			"Year":"2015",
 			"Set":false,
 			"Url":"http://michel-beaubien.com/forrats/",
-			"SVG":"",
-			"PNG":"",
+			"SVG":"images/websites/forrats.svg",
+			"PNG":"images/websites/forrats.png",
 			"Desc":"I took part in a team base project, five of us took charge in completing separate tasks. I was the front-end developer for this website. I was responsible for writting all of the HTML & CSS for this website, including all of the Javascript & jQuery functionalities. This website took four months to complete. Forrat's Chocolates was a great success!"
 		},
 		{
@@ -57,8 +57,8 @@
 			"Year":"2014 / Present",
 			"Set":false,
 			"Url":"http://beyondthebeach.ca/",
-			"SVG":"",
-			"PNG":"",
+			"SVG":"images/websites/btb.svg",
+			"PNG":"images/websites/btb.png",
 			"Desc":"This website is for a None Profit Organization. I worked very closely with the client to guarantee absolute satisfaction, via Email & Skype. Working for free, as a student, due dates and meetings, it was a great experience. I was the Front-End developer for this website, but I was also responsible for the design & functionalities."
 		},
 		{
@@ -67,8 +67,8 @@
 			"Year":"2014",
 			"Set":false,
 			"Url":"http://michel-beaubien.com/tycrete/",
-			"SVG":"",
-			"PNG":"",
+			"SVG":"images/websites/tycrete.svg",
+			"PNG":"images/websites/tycrete.png",
 			"Desc":"I was asked by a friend to create this website as a Christmas gift. Start date was November & I had the website complete a few weeks before Christmas. The client was thrilled to receive the website, they loved how the colours of the logo came together with the website. In the new year, I was asked to do extra functionalities for the Portfolio page, & to make it mobile. This was my first freelance website."
 		}
 	]
