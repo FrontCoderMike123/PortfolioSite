@@ -1,0 +1,47 @@
+/*Important*/
+body
+{
+  background-color: #ebebeb;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.hidden
+{
+  display: none;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-family: 'Nunito', sans-serif!important;
+}
+
+p,span,li,a
+{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+object,img
+{
+  max-width: 100%;
+}
+
+object
+{
+  pointer-events: none;
+}
+
+/*FOOTER*/
+
+footer
+{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  text-align: center;
+}
+
+/*Important*/

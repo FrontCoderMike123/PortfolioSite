@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michel Beaubien - Portfolio</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Nunito:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<script src="js/TweenMax.min.js"></script>
+</head>
+
+<body data-ng-app="portfolio">
+
+	<header ng-controller="headerCTRL">
+		<a ng-href="#/home">
+			<div>
+				<object data="{{meSVG}}">
+					<img data-ng-src="{{mePNG}}" alt="Michel Beaubien - Developer"/>
+				</object>
+			</div>
+		</a>
+
+		<nav id="mainNav">
+			<h2 class="hidden">Main Navigation</h2>
+			<ul>
+				<li data-ng-repeat="url in urls">
+				<a ng-href="#/{{url.Path}}" ng-class="{active: $state.current.activeNav == url.Type}">
+						{{url.Name}}
+				</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="container">
+    	<ui-view>
+    	</ui-view>
+  	</div>
+
+  	<footer ng-controller="footerCTRL">
+  		<div class="socialBox">
+  			<ul>
+  				<li data-ng-repeat="social in socialLinks">
+  					<a ng-href="{{social.Link}}" target="onblank">
+  						<div>
+  							<object data="{{social.SVG}}">
+  								<img data-ng-src="{{social.PNG}}" alt="{{social.Name}}"/>
+  							</object>
+  						</div>
+  					</a>
+  				</li>
+  			</ul>
+		</div>
+		<p id="copyText">&copy; <span class="copyYear">{{newYear}}</span> MB Developer, Michel Beaubien, All Rights Reserved</p>
+  	</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
