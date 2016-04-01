@@ -32,6 +32,17 @@ object
   pointer-events: none;
 }
 
+.containers
+{
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
 /*Container - padding*/
 
 #container
@@ -52,5 +63,17 @@ footer
   z-index: 0;
   text-align: center;
 }
+
+/*FOOTER*/
+
+/*DESIGNS*/
+
+.work
+{
+  display: inline-block;
+  width: 33.333333333333333%;
+}
+
+/*DESIGNS*/
 
 /*Important*/

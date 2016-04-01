@@ -17,10 +17,24 @@
 			activeNav:'websites'
 		});
 
+		$stateProvider.state('Website',{
+			url:'/websites/:ID',
+			templateUrl:'views/websiteDetails.html',
+			controller:'siteDetailsCTRL',
+			activeNav:'websites'
+		});
+
 		$stateProvider.state('Designs',{
 			url:'/designs',
 			templateUrl:'views/designs.html',
 			controller:'designCTRL',
+			activeNav:'designs'
+		});
+
+		$stateProvider.state('Design',{
+			url:'/designs/:ID',
+			templateUrl:'views/designDetails.html',
+			controller:'designDetailsCTRL',
 			activeNav:'designs'
 		});
 
@@ -80,18 +94,41 @@
 	}]);
 
 	portfolio.controller('homeCTRL',['$scope','$http',function($scope,$http){
-		$http.get('latest.json').success(function(data){
+		$http.get('json/latests.json').success(function(data){
 			$scope.latests = data.Latests;
 			//console.log($scope.latests);
 		});
 	}]);
 
 	portfolio.controller('siteCTRL',['$scope','$http',function($scope,$http){
+		$http.get('json/websites.json').success(function(data){
+			$scope.websites = data.Websites;
+			//console.log($scope.websites);
+		});
+	}]);
 
+	portfolio.controller('siteDetailsCTRL',['$scope','$http','$stateParams',function($scope,$http,$stateParams){
+		$http.get('json/websites.json').success(function(details){
+			$scope.Name = details.Websites[$stateParams.ID].Name;
+			$scope.Year = details.Websites[$stateParams.ID].Year;
+			$scope.Desc = details.Websites[$stateParams.ID].Desc;
+			$scope.Url = details.Websites[$stateParams.ID].Url;
+			$scope.SVG = details.Websites[$stateParams.ID].SVG;
+			$scope.PNG = details.Websites[$stateParams.ID].PNG;
+		});
 	}]);
 
 	portfolio.controller('designCTRL',['$scope','$http',function($scope,$http){
+		$http.get('json/designs.json').success(function(data){
+			$scope.designs = data.Designs;
+			//console.log($scope.designs);
+		});
+	}]);
 
+	portfolio.controller('designDetailsCTRL',['$scope','$http','$stateParams',function($scope,$http,$stateParams){
+		$http.get('json/designs.json').success(function(details){
+			$scope.JPG = details.Designs[$stateParams.ID].JPG;
+		});
 	}]);
 
 	portfolio.controller('contactCTRL',['$scope','$http',function($scope,$http){

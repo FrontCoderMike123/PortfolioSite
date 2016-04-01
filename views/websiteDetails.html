@@ -1,0 +1,17 @@
+<section class="containers">
+	<h1 class="hidden">Website Details</h1>
+	<a href="#/websites">Back</a>
+	<div class="detailsHolder">
+		<h3 data-ng-bind-html="Name"></h3>
+		<h5 data-ng-bind-html="Year"></h5>
+		<p data-ng-bind-html="Desc"></p>
+
+		<a ng-href="{{Url}}" target="onblank">
+			<div>
+				<object data="{{SVG}}">
+					<img data-ng-src="{{PNG}}" alt="{{Name}}"/>
+				</object>
+			</div>
+		</a>
+	</div>
+</section>

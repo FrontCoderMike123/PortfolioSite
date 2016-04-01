@@ -1,3 +1,7 @@
-<section>
-	<h1>Designs</h1>
+<section class="containers">
+		<div class="work" data-ng-repeat="art in designs">
+			<a ng-href="#/designs/{{$index}}">
+				<img data-ng-src="{{art.JPG}}" alt="{{art.Name}}"/>
+			</a>
+		</div>
 </section>

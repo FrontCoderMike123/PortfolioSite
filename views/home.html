@@ -11,16 +11,7 @@
 		<ul>
 	<li data-ng-repeat="latest in latests" ng-model="latest.Set" ng-class="latest-{{latest.Set}}">
 		<p>{{latest.Name}}</p>
-	</li>
-		</ul>
-
-		<div id="jobHolder">
-	<div data-ng-repeat="latest in latests" ng-model="latest.Set" ng-class="latest-{{latest.Set}}">
-		<h5>{{latest.Year}}</h5>
-		<h3>{{latest.Name}}</h3>
-
-		<p>{{latest.Desc}}</p>
-
+		<p>{{latest.Year}}</p>
 		<a ng-href="{{latest.Url}}" target="onblank">
 			<div>
 				<object data="{{latest.SVG}}">
@@ -28,7 +19,7 @@
 				</object>
 			</div>
 		</a>
-	</div>
-		</div>
+	</li>
+		</ul>
 	</div>
 </section>

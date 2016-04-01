@@ -1,0 +1,131 @@
+{
+	"Designs":
+	[
+		{
+			"ID":"1",
+			"Name":"Blue Eyes",
+			"Short":"Blue Eyes",
+			"PNG":"images/designs/art/blue.png",
+			"JPG":"images/designs/art/blue.jpg",
+			"Thumb":"images/designs/art/blueTH.png",
+			"Desc":"Layering is fun!"
+		},
+		{
+			"ID":"2",
+			"Name":"Secret Spy",
+			"Short":"Spy",
+			"PNG":"images/designs/art/suit.png",
+			"JPG":"images/designs/art/suit.jpg",
+			"Thumb":"images/designs/art/suitTH.png",
+			"Desc":"Yellow Suited Secret Spy."
+		},
+		{
+			"ID":"3",
+			"Name":"Music Player",
+			"Short":"Music",
+			"PNG":"images/designs/art/player.png",
+			"JPG":"images/designs/art/player.jpg",
+			"Thumb":"images/designs/art/playerTH.png",
+			"Desc":"Created a beautiful music player for the iPod."
+		},
+		{
+			"ID":"4",
+			"Name":"Fake Graffiti",
+			"Short":"Graffiti",
+			"PNG":"images/designs/art/graffiti.png",
+			"JPG":"images/designs/art/graffiti.jpg",
+			"Thumb":"images/designs/art/graffitiTH.jpg",
+			"Desc":"A drawing of a graffiti sketch applied to a wall using Illustrator & Photoshop."
+		},
+		{
+			"ID":"5",
+			"Name":"Comic Book Villain",
+			"Short":"Comic Book",
+			"PNG":"images/designs/art/self.png",
+			"JPG":"images/designs/art/self.jpg",
+			"Thumb":"images/designs/art/selfTH.png",
+			"Desc":"Evil illustration of myself as a villain from a comic book."
+		},
+		{
+			"ID":"6",
+			"Name":"Tim Burton Google Logo",
+			"Short":"Google",
+			"PNG":"images/designs/art/google.png",
+			"JPG":"images/designs/art/google.jpg",
+			"Thumb":"images/designs/art/googleTH.png",
+			"Desc":"Google logo re-design inspired by Tim Burton."
+		},
+		{
+			"ID":"7",
+			"Name":"Mozart",
+			"Short":"Mozart",
+			"PNG":"images/designs/cds/mozart.png",
+			"JPG":"images/designs/cds/mozart.jpg",
+			"Thumb":"images/designs/cds/mozartTH.png",
+			"Desc":"Recreation of Mozart' 'Greatest Hits' CD."
+		},
+		{
+			"ID":"8",
+			"Name":"Neil Young",
+			"Short":"Neil Young",
+			"PNG":"images/designs/cds/neil.png",
+			"JPG":"images/designs/cds/neil.jpg",
+			"Thumb":"images/designs/cds/neilTH.png",
+			"Desc":"Recreation of Neil Young's 'Harvest' CD Cover."
+		},
+		{
+			"ID":"9",
+			"Name":"Pink Floyd",
+			"Short":"Pink Floyd",
+			"PNG":"images/designs/cds/floyd.png",
+			"JPG":"images/designs/cds/floyd.jpg",
+			"Thumb":"images/designs/cds/floydTH.png",
+			"Desc":"Recreation of Pink Floyd's 'The Wall' Album."
+		},
+		{
+			"ID":"10",
+			"Name":"Offspring",
+			"Short":"Offspring",
+			"PNG":"images/designs/cds/offspring.png",
+			"JPG":"images/designs/cds/offspring.jpg",
+			"Thumb":"images/designs/cds/offspringTH.png",
+			"Desc":"Recreation of Offspring's 'Conspiracy of One' CD."
+		},
+		{
+			"ID":"11",
+			"Name":"The Beatles",
+			"Short":"The Beatles",
+			"PNG":"images/designs/free/beatles.png",
+			"JPG":"images/designs/free/beatles.jpg",
+			"Thumb":"images/designs/free/beatlesTH.png",
+			"Desc":"A Beatles group shot - Adobe Illustrator."
+		},
+		{
+			"ID":"12",
+			"Name":"Jason Voorhess",
+			"Short":"Jason Voorhess",
+			"PNG":"images/designs/free/jason.png",
+			"JPG":"images/designs/free/jason.jpg",
+			"Thumb":"images/designs/free/jasonTH.png",
+			"Desc":"Friday the 13th's Jason Voorhess - Adobe Illustrator."
+		},
+		{
+			"ID":"13",
+			"Name":"Freddy Krueger",
+			"Short":"Freddy Krueger",
+			"PNG":"images/designs/free/freddy.png",
+			"JPG":"images/designs/free/freddy.jpg",
+			"Thumb":"images/designs/free/freddyTH.png",
+			"Desc":"1 / 2 Freddy's Coming for You! - Adobe Illustrator."
+		},
+		{
+			"ID":"14",
+			"Name":"Leatherface",
+			"Short":"Leatherface",
+			"PNG":"images/designs/free/leather.png",
+			"JPG":"images/designs/free/leather.jpg",
+			"Thumb":"images/designs/free/leatherTH.png",
+			"Desc":"Texas Chainsaw's Leatherface - Adobe Illustrator."
+		}
+	]
+}

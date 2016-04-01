@@ -1,3 +1,18 @@
-<section>
+<section class="containers">
 	<h1>Websites</h1>
+	<div id="siteNav">
+		<ul>
+			<li data-ng-repeat="website in websites">
+				<a href="#/websites/{{$index}}">
+					<div>
+						<object data="{{website.SVG}}">
+							<img data-ng-src="{{website.PNG}}" alt="{{website.Name}}"/>
+						</object>
+						<h3>{{website.Name}}</h3>
+						<span class="mobileSite">{{website.Short}}</span>
+					</div>
+				</a>
+			</li>
+		</ul>	
+	</div>
 </section>
