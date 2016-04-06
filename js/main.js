@@ -40,7 +40,7 @@
 
 		$stateProvider.state('Contact',{
 			url:'/contact',
-			templateUrl:'views/contact.html',
+			templateUrl:'views/contact.php',
 			controller:'contactCTRL',
 			activeNav:'contact'
 		});
@@ -127,7 +127,9 @@
 
 	portfolio.controller('designDetailsCTRL',['$scope','$http','$stateParams',function($scope,$http,$stateParams){
 		$http.get('json/designs.json').success(function(details){
+			$scope.Name = details.Designs[$stateParams.ID].Name;
 			$scope.JPG = details.Designs[$stateParams.ID].JPG;
+			$scope.Desc = details.Designs[$stateParams.ID].Desc;
 		});
 	}]);
 
