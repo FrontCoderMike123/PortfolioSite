@@ -15,20 +15,16 @@
 <body data-ng-app="portfolio">
 
 	<header ng-controller="headerCTRL">
-		<a ng-href="#/home">
-			<div>
-				<object data="{{meSVG}}">
-					<img data-ng-src="{{mePNG}}" alt="Michel Beaubien - Developer"/>
-				</object>
-			</div>
-		</a>
-
 		<nav id="mainNav">
 			<h2 class="hidden">Main Navigation</h2>
 			<ul>
 				<li data-ng-repeat="url in urls">
 				<a ng-href="#/{{url.Path}}" ng-class="{active: $state.current.activeNav == url.Type}">
-						{{url.Name}}
+					<div>
+						<object data="{{url.SVG}}">
+							<img data-ng-src="{{url.PNG}}" alt="{{url.Name}}"/>
+						</object>
+					</div>
 				</a>
 				</li>
 			</ul>
@@ -41,6 +37,13 @@
   	</div>
 
   	<footer ng-controller="footerCTRL">
+  		<a ng-href="#/home" id="logo">
+			<div>
+				<object data="{{meSVG}}">
+					<img data-ng-src="{{mePNG}}" alt="Michel Beaubien - Developer"/>
+				</object>
+			</div>
+		</a>
   		<div class="socialBox">
   			<ul>
   				<li data-ng-repeat="social in socialLinks">

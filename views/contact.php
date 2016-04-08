@@ -54,6 +54,31 @@
 
 		<input type="submit" name="submit" value="Submit" title="Submit"/>
 	</form>
+
+	<div id="contactInfo">
+		<h3>Contact Information</h3>
+		<ul>
+			<li>facebook</li>
+			<li>LinkedIn</li>
+			<li>Skype</li>
+		</ul>				
+	</div>
+
+	<div id="resumeHolder">
+	<a class="resumeLink" href="images/resumes/MichelBeaubien_Resume.pdf" target="onblank"
+	type="application/octet-stream" download="MichelBeaubien_Resume.pdf">
+		Download Resume
+	</a>
+	<a class="resumeLink" href="images/resumes/MichelBeaubien_BusinessCard.pdf" target="onblank"
+	type="application/octet-stream" download="MichelBeaubien_BusinessCard.pdf">
+		<div>
+			<object data="images/resumes/busCard.svg">
+				<img src="images/resumes/busCard.jpg" alt="Michel Beaubien Business Card"/>
+			</object>
+		</div>
+	</a>
+	</div>
+
 </section>
 
 <script type="text/javascript">

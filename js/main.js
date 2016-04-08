@@ -62,21 +62,22 @@
 	}]);
 
 	portfolio.controller('headerCTRL',['$scope','$state',function($scope,$state){
-		$scope.meSVG = 'images/MB/logo.svg';
-		$scope.mePNG = 'images/MB/logo.png';
+		$scope.$state = $state;
 		$scope.urls = [
-			{ 'Path':'home', 'Name':'Home', 'Type':'home' },
-			{ 'Path':'websites', 'Name':'Website', 'Type':'websites' },
-			{ 'Path':'designs', 'Name':'Designs', 'Type':'designs' },
-			{ 'Path':'contact', 'Name':'Contact', 'Type':'contact' },
-			{ 'Path':'biography', 'Name':'Biography', 'Type':'biography' },
-			{ 'Path':'painting', 'Name':'Painting', 'Type':'painting' }
+			{ 'Path':'home', 'Name':'Home', 'Type':'home', 'SVG':'images/nav/home.svg', 'PNG':'images/nav/home.png' },
+			{ 'Path':'websites', 'Name':'Website', 'Type':'websites', 'SVG':'images/nav/site.svg', 'PNG':'images/nav/site.png' },
+			{ 'Path':'designs', 'Name':'Designs', 'Type':'designs', 'SVG':'images/nav/design.svg', 'PNG':'images/nav/design.png' },
+			{ 'Path':'contact', 'Name':'Contact', 'Type':'contact', 'SVG':'images/nav/contact.svg', 'PNG':'images/nav/contact.png' },
+			{ 'Path':'biography', 'Name':'Biography', 'Type':'biography', 'SVG':'images/nav/bio.svg', 'PNG':'images/nav/bio.png' },
+			{ 'Path':'painting', 'Name':'Painting', 'Type':'painting', 'SVG':'images/nav/paint.svg', 'PNG':'images/nav/paint.png' }
 		];
 	}]);
 
 	portfolio.controller('footerCTRL',['$scope','$http',function($scope,$http){
 		var today = new Date();
 		var year = today.getFullYear();
+		$scope.meSVG = 'images/MB/logo.svg';
+		$scope.mePNG = 'images/MB/logo.png';
 		$scope.newYear = year;
 		$scope.socialLinks = [
 			{
