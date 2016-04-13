@@ -14,68 +14,58 @@
     }
 ?>
 
-<section class="containers" id="contactCon">
+<section class="containers" id="contact">
 	<form id="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 		<h3>Contact Me</h3>
 		<fieldset>
-			<label>Full Name</label>
             <input type='text' name='name' placeholder='Enter name please' required />
+            <label>Full Name</label>
 		</fieldset>
 
 		<fieldset>
-			<label>Telephone</label>
             <input type='tel' name='tel' placeholder='(123)-456-7890' required />
+            <label>Telephone</label>
 		</fieldset>
 
 		<fieldset>
-			<label>City</label>
             <input type='text' name='city' placeholder='City' required />
+            <label>City</label>
 		</fieldset>
 
 		<fieldset>
-			<label>Email</label>
             <input type='email' name='email' placeholder='you@yourdomain' required />
+            <label>Email</label>
 		</fieldset>
 
-		<fieldset>
-			<label for="free">Free Quote</label>
-			<input type="radio" name="job" value="Free Quote" id="free" checked/>
-			<label for="website">Website Developer</label>
-			<input type="radio" name="job" value="Website Developer" id="website"/>
-			<label for="design">Website Designer</label>
-			<input type="radio" name="job" value="Website Designer" id="design"/>
-		</fieldset>
+		<div id="jobsHolder">
+			<h3>Free Quote</h3>
+			<h3>Website Developer</h3>
+			<h3>Website Designer</h3>
+		<div class="jobs">
+            <input type="radio" id="free" name="job" value="Free Quote" checked/>
+            <label for="free"></label>
+        </div>
 
-		<fieldset>
-			<label>Message <span class="required">*</span></label>
-            <textarea type='message' name='message' onkeyup="adjust_textarea(this)" placeholder='Job Information' required>
-            </textarea>
-		</fieldset>
+        <div class="jobs">
+        	<input type="radio" id="dev" name="job" value="Website Developer"/>
+            <label for="dev"></label>
+        </div>
 
-		<input type="submit" name="submit" value="Submit" title="Submit"/>
+        <div class="jobs">
+        	<input type="radio" id="des" name="job" value="Website Designer"/>
+            <label for="des"></label>
+        </div>
+		</div>
+
+		<textarea type="message" onkeyup="adjust_textarea(this)" placeholder="Message Me"></textarea>
+
+		<input id="formSubmit" type="submit" name="submit" value="Submit" title="Submit"/>
 	</form>
-
-	<div id="contactInfo">
-		<h3>Contact Information</h3>
-		<ul>
-			<li>facebook</li>
-			<li>LinkedIn</li>
-			<li>Skype</li>
-		</ul>				
-	</div>
 
 	<div id="resumeHolder">
 	<a class="resumeLink" href="images/resumes/MichelBeaubien_Resume.pdf" target="onblank"
 	type="application/octet-stream" download="MichelBeaubien_Resume.pdf">
 		Download Resume
-	</a>
-	<a class="resumeLink" href="images/resumes/MichelBeaubien_BusinessCard.pdf" target="onblank"
-	type="application/octet-stream" download="MichelBeaubien_BusinessCard.pdf">
-		<div>
-			<object data="images/resumes/busCard.svg">
-				<img src="images/resumes/busCard.jpg" alt="Michel Beaubien Business Card"/>
-			</object>
-		</div>
 	</a>
 	</div>
 

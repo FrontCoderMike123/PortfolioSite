@@ -15,20 +15,33 @@
 <body data-ng-app="portfolio">
 
 	<header ng-controller="headerCTRL">
-		<nav id="mainNav">
-			<h2 class="hidden">Main Navigation</h2>
-			<ul>
-				<li data-ng-repeat="url in urls">
-				<a ng-href="#/{{url.Path}}" ng-class="{active: $state.current.activeNav == url.Type}">
-					<div>
-						<object data="{{url.SVG}}">
-							<img data-ng-src="{{url.PNG}}" alt="{{url.Name}}"/>
-						</object>
-					</div>
-				</a>
-				</li>
-			</ul>
-		</nav>
+
+		<object data="{{logoSVG}}">
+			<img data-ng-src="{{logoPNG}}" alt="MB Logo"/>
+		</object>
+
+		<div class="menu-wrap">
+    		<nav class="menu">
+        		<ul class="clearfix">
+            	<li><a href="#/home" ng-class="{active: $state.current.activeNav == url.Type}">Home</a></li>
+            	<li>
+                	<a href="#">Work <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="#/websites">Websites</a></li>
+                    <li><a href="#/designs">Designs</a></li>
+                    <li><a href="#/painting">Paint</a></li>
+                </ul>
+            	</li>
+            	<li>
+                	<a href="#">Me <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu me">
+                    <li><a href="#/contact">Contact</a></li>
+                    <li><a href="#/biography">Biography</a></li>
+                </ul>
+            	</li>
+        		</ul>
+    		</nav>
+		</div>
 	</header>
 
 	<div id="container">
@@ -37,27 +50,20 @@
   	</div>
 
   	<footer ng-controller="footerCTRL">
-  		<a ng-href="#/home" id="logo">
-			<div>
-				<object data="{{meSVG}}">
-					<img data-ng-src="{{mePNG}}" alt="Michel Beaubien - Developer"/>
-				</object>
-			</div>
-		</a>
   		<div class="socialBox">
   			<ul>
-  				<li data-ng-repeat="social in socialLinks">
-  					<a ng-href="{{social.Link}}" target="onblank">
-  						<div>
-  							<object data="{{social.SVG}}">
-  								<img data-ng-src="{{social.PNG}}" alt="{{social.Name}}"/>
-  							</object>
-  						</div>
-  					</a>
-  				</li>
+  				<a href="https://www.facebook.com/michelBeaubienWeb" target="onblank">
+            <li class="social facebook"></li>
+          </a>
+          <a href="https://www.linkedin.com/profile/view?id=410321420" target="onblank">
+            <li class="social linked"></li>
+          </a>
+          <a href="http://www.skype.com/en/" target="onblank">
+            <li class="social skype"></li>
+          </a>
   			</ul>
 		</div>
-		<p id="copyText">&copy; <span class="copyYear">{{newYear}}</span> MB Developer, Michel Beaubien, All Rights Reserved</p>
+		<p id="copyText">&copy; <span class="copyYear">{{newYear}}</span> MB Developer, Michel Beaubien.<br>All Rights Reserved.</p>
   	</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
