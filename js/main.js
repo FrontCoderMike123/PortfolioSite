@@ -41,7 +41,6 @@
 		$stateProvider.state('Contact',{
 			url:'/contact',
 			templateUrl:'views/contact.php',
-			controller:'contactCTRL',
 			activeNav:'contact'
 		});
 
@@ -57,6 +56,11 @@
 			templateUrl:'views/painting.html',
 			controller:'paintCTRL',
 			activeNav:'painting'
+		});
+
+		$stateProvider.state('thankyou',{
+			url:'/thankyou',
+			templateUrl:'views/thankyou.html'
 		});
 		$urlRouterProvider.otherwise('/home');
 	}]);
@@ -138,12 +142,25 @@
 		});
 	}]);
 
-	portfolio.controller('contactCTRL',['$scope','$http',function($scope,$http){
-
-	}]);
-
 	portfolio.controller('bioCTRL',['$scope','$http',function($scope,$http){
+		$scope.skills = [
+			{ "Name":"HTML5","SVG":"images/bio/html5.svg","PNG":"images/bio/html5.png" },
+			{ "Name":"CSS3","SVG":"images/bio/css.svg","PNG":"images/bio/css.png" },
+			{ "Name":"JAVASCRIPT","SVG":"images/bio/javascript.svg","PNG":"images/bio/javascript.png" },
+			{ "Name":"MONGODB","SVG":"images/bio/mongo.svg","PNG":"images/bio/mongo.png" },
+			{ "Name":"ANGULARJS","SVG":"images/bio/angular.svg","PNG":"images/bio/angular.png" },
+			{ "Name":"EXPRESS","SVG":"images/bio/express.svg","PNG":"images/bio/express.png" },
+			{ "Name":"NODEJS","SVG":"images/bio/node.svg","PNG":"images/bio/node.png" },
+			{ "Name":"GITHUB","SVG":"images/bio/github.svg","PNG":"images/bio/github.png" }
+		];
 
+		$scope.tools = [
+			{ "Name":"Sublime Text","SVG":"images/bio/sublime.svg","PNG":"images/bio/sublime.png" },
+			{ "Name":"Illustrator","SVG":"images/bio/AI.svg","PNG":"images/bio/AI.png" },
+			{ "Name":"PhotoShop","SVG":"images/bio/PS.svg","PNG":"images/bio/PS.png" },
+			{ "Name":"inDesign","SVG":"images/bio/inDesign.svg","PNG":"images/bio/inDesign.png" },
+			{ "Name":"After Effects","SVG":"images/bio/AE.svg","PNG":"images/bio/AE.png" }
+		];
 	}]);
 
 	portfolio.controller('paintCTRL',['$scope','$http',function($scope,$http){

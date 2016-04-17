@@ -1,8 +1,9 @@
 <section class="containers" id="designs">
 	<h2 class="hidden">Designs</h2>
-		<div class="work" data-ng-repeat="art in designs">
+		<div class="designs" data-ng-repeat="art in designs">
 			<a ng-href="#/designs/{{$index}}">
 				<img data-ng-src="{{art.JPG}}" alt="{{art.Name}}"/>
+				<p>{{art.Name}}</p>
 			</a>
 		</div>
 </section>

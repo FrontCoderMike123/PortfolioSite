@@ -1,6 +1,14 @@
 <section class="containers" id="designDetails">
-	<h3 data-ng-bind-html="Name"></h3>
-		<img data-ng-src="{{JPG}}" alt="WORK"/>
+	<div class="detailsHolder">
+		<div class="clickOn">
+			<h3>{{Name}}</h3>
+		</div>
+		<a class="workLink" ng-href="{{Url}}">
+			<img data-ng-src="{{JPG}}" alt="WORK"/>
+		</a>
+
 		<p data-ng-bind-html="Desc"></p>
-		<a href="#/designs">Back</a>
+
+		<a class="backDetails" href="#/designs">Back</a>
+	</div>
 </section>

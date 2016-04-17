@@ -1,3 +1,50 @@
 <section class="containers" id="painting">
-	<h2 class="hidden">Painting</h2>
+<div id="buttonsHolder">
+    <p id="easelText">With the HTML5 canvas element, along with Easel JS, I created this neat drawing app. Please enjoy!</p>
+        <div class="button brush" title="Paint Brush"></div>
+        <div class="button eraser" title="Mighty Eraser"></div>
+        <div class="button export" title="Export Image"></div>
+        <div id="nuke" class="button" title="Clear Canvas"></div>
+        <div class="size">
+        	<p>Sizes</p>
+        	<ul>
+            	<li class="sizes Size5"></li>
+            	<li class="sizes Size10"></li>
+            	<li class="sizes Size15"></li>
+        	</ul>
+        </div>
+        <div class="colour">
+            <p>Colours <span class="chosen"></span></p>
+            <ul>
+                <li class="colors purple"></li>
+                <li class="colors blue"></li>
+                <li class="colors green"></li>
+                <li class="colors gold"></li>
+                <li class="colors orange"></li>
+                <li class="colors pink"></li>
+                <li class="colors red"></li>
+                <li class="colors grey"></li>
+                <li class="colors darkGrey"></li>
+                <li class="colors black"></li>
+            </ul>
+        </div>
+</div>
+
+    <div id="canvasHolder"> 
+        <h3>Start Drawing!</h3>
+    <canvas width="1000px" height="500px" id="myCanvas">
+    <p>Please Update Your Browser so that it supports Canvas</p>
+    </canvas>
+    </div><!--canvas holder-->
+
+<!--the section that will appear if a user is on that page a sizes it down, its not mobile friendly yet-->
+    <section class="row mobileDraw">
+        <h2 class="hidden">Drawing app is not mobile friendly at this time.</h2>
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+            <h3>Sorry for the inconvenience...</h3>
+            <p>This drawing application is set to work (for now) on desktop size screens. I will be on this solution as soon as time is on my side. I hope you only ran into this message while scalling the browser window down, and not because of initial window size. This will be resolved! <span class="createSpan">Have a nice day.</span></p>
+        </div>
+    </section>
+<!---->
 </section>
+<script src="js/canvas.js"></script>

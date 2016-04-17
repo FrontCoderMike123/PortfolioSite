@@ -299,7 +299,7 @@ footer
 #openingSpeech p
 {
   color: #ebebeb;
-  line-height: 40px;
+  line-height: 50px;
   font-size: 2em;
 }
 
@@ -397,7 +397,7 @@ footer
 {
  width: 76%;
   display: block;
-  margin: auto;
+  margin: 20px auto;
   padding: 10px;
   background-color: #ebebeb;
   border-radius: 10px;
@@ -410,12 +410,14 @@ footer
   color: #280e0e;
   font-size: 2em;
   text-shadow: -4px 4px 2px rgba(0,0,0,.2);
+  -webkit-text-shadow: -4px 4px 2px rgba(0,0,0,.2);
+  -o-text-shadow: -4px 4px 2px rgba(0,0,0,.2);
 }
 
 .clickOn span
 {
   position: absolute;
-  bottom: 0;
+  bottom: 2px;
   right: 0;
 }
 
@@ -425,23 +427,22 @@ footer
   clear: both;
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 .detailsHolder p
 {
   line-height: 50px;
   font-size: 1.3em;
-  text-align: left;
-  float: left;
-  width:75%;
   margin-bottom: 30px;
+  padding: 0 20px;
 }
 
-.detailsHolder div
+.workLink
 {
-  float: left;
-  margin-right: 20px;
-  width: 20%;
+  margin: auto;
+  display: block;
+  width: -moz-max-content;
 }
 
 .backDetails
@@ -467,10 +468,71 @@ footer
 
 /*DESIGNS*/
 
-.work
+#designs
+{
+  background-color: #280e0e;
+}
+
+.designs
 {
   display: inline-block;
-  width: 33.333333333333333%;
+  margin:30px;
+  width: 35%;
+}
+
+.designs a
+{
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0);
+  display: block;
+}
+
+.designs p
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(170,17,17,.9);
+  font-size: 2.4em;
+  line-height: 50px;
+  color: #ebebeb;
+  padding-top: 140px;
+  opacity: 0;
+  -webkit-opacity:0;
+  -o-opacity:0;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+}
+
+.designs a:hover
+{
+  border-color: #ebebeb;
+}
+
+.designs:hover.designs p
+{
+  opacity: 1;
+  -webkit-opacity: 1;
+  -o-opacity: 1;
+}
+
+#designDetails
+{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #280e0e;
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
 }
 
 /*DESIGNS*/
@@ -500,6 +562,7 @@ footer
   background-color: #ebebeb;
   padding-top: 15px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 #form h3
@@ -524,7 +587,7 @@ footer
 {
   display: inline-block;
   width: 40%;
-  margin: 15px;
+  margin: 10px 15px;
 }
 
 #form fieldset label
@@ -560,17 +623,23 @@ footer
   margin: 10px 0 0 0;
 }
 
+#jobsHolder
+{
+  padding: 10px 0;
+}
+
 #jobsHolder h3
 {
   display: inline-block;
-  width: 250px;
-  margin: 0 5px;
+  width: 210px;
+  font-size: 1em;
+  margin: 0 10px;
 }
 
 .jobs {
   display: inline-block;
-  margin: 0 5px;
-	width: 250px;
+  margin: 0 10px;
+	width: 210px;
 	height: 30px;
 	background-color: #ebebeb;
 	margin-top: 5px;
@@ -583,7 +652,7 @@ footer
 .jobs label {
 	cursor: pointer;
 	position: absolute;
-	width: 244px;
+	width: 204px;
 	height: 21px;
 	border-radius: 5px;
 	left: 3px;
@@ -611,10 +680,6 @@ footer
 	opacity: 0.3;
 }
 
-.jobs input[type=radio]:checked ~ label {
-  color: #ebebeb;
-}
-
 .jobs input[type=radio]:checked + label:after {
 	opacity: 1;
 }
@@ -624,11 +689,13 @@ footer
   border: none;
   background-color: #aa1111;
   color: #ebebeb;
-  padding: 10px 20px;
+  width: 100%;
+  padding: 10px 0;
   font-size: 1.1em;
-  float: right;
-  border-radius: 0 0 10px 0;
   cursor: pointer;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
 }
 
 #formSubmit:hover
@@ -636,6 +703,351 @@ footer
   background-color: #280e0e;
 }
 
+#resumeHolder
+{
+  background-color: #280e0e;
+  border-top: 2px solid #ebebeb;
+  padding: 1%;
+  width: 98%;
+  text-align: center;
+}
+
+#resumeHolder p
+{
+  color: #ebebeb;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+.resumeLink
+{
+  color: #ebebeb;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.resumeLink:hover
+{
+  color: #280e0e;
+  text-shadow: 0 1px 0px rgba(170,17,17,.5), -1px 0 0 rgba(170,17,17,.5), 1px 0 0 rgba(170,17,17,.5), 0 -1px 0 rgba(170,17,17,.5);
+}
+
+#thankYouSec
+{
+  min-height: 100vh;
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+  align-content: center;
+  width: 100%;
+  background-color: #280e0e;
+  color: #ebebeb;
+  text-align: center;
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#thankYouSec div
+{
+  width: 90%;
+  margin: auto;
+  line-height: 80px;
+}
+
+#thankYouSec p
+{
+  color: #ebebeb;
+}
+
+#thankYouSec a
+{
+  display: block;
+  color: #280e0e;
+  font-size: 1.2em;
+  text-shadow: 0 1px 0px rgba(170,17,17,.5), -1px 0 0 rgba(170,17,17,.5), 1px 0 0 rgba(170,17,17,.5), 0 -1px 0 rgba(170,17,17,.5);
+}
+
 /*CONTACT*/
+
+/*BIOGRAPHY*/
+
+#biography
+{
+  background-color: #280e0e;
+}
+
+#developer
+{
+  overflow: hidden;
+  width: 70%;
+  background-color: #ebebeb;
+  margin: auto;
+  position: relative;
+	display: flex;
+  border-radius: 0 0 10px 10px;
+}
+
+#developer img
+{
+  box-shadow: 10px 0 5px -5px rgba(0,0,0,.5);  
+}
+
+#developer p
+{
+  align-self: center;
+  width: 65%;
+  margin-left: 3%;
+  line-height: 30px;
+  font-size: 1.25em;
+  text-align: left;
+}
+
+#biography h3
+{
+  color: #280e0e;
+  font-size: 2em;
+  text-align: left;
+  padding-left: 10px;
+  text-shadow: -4px 4px 2px rgba(0,0,0,.2);
+  -webkit-text-shadow: -4px 4px 2px rgba(0,0,0,.2);
+  -o-text-shadow: -4px 4px 2px rgba(0,0,0,.2);
+}
+
+#responsive, #skills, #tools
+{
+  margin: 10px auto;
+  padding: 10px 0;
+  width: 70%;
+  background-color: #ebebeb;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#skills li
+{
+  display: inline-block;
+  width: 25%;
+  margin: 10px 0
+}
+
+#tools li
+{
+  display: inline-block;
+  width: 30%;
+  margin: 10px 0;
+}
+
+#fresh
+{
+  width: 70%;
+  background-color: #ebebeb;
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0;
+}
+
+#fresh p
+{
+  font-size: 1.5em;
+}
+
+/*BIOGRAPHY*/
+
+/*CANVAS*/
+
+#canvasHolder
+{
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  position: relative;
+}
+
+#canvasHolder h3
+{
+  
+}
+
+#myCanvas
+{
+  border: 4px solid #280e0e;
+  clear: both;
+}
+
+#buttonsHolder
+{
+  background-color: #280e0e;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+#buttonsHolder p
+{
+  
+}
+
+#easelText
+{
+  background-color: #aa1111;
+  width: 100%;
+  padding: 20px;
+  display: block;
+  color: #ebebeb;
+  font-size: 1.2em;
+}
+
+.button
+{
+  width: 25%;
+  height: 100px;
+  display: block;
+  float: left;
+  margin: 0;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.button:hover
+{
+  background-color: #aa1111;
+}
+
+.size p,.colour p
+{
+  color: #ebebeb;
+  font-size: 1.2em;
+  width: 100%;
+  background-color: #aa1111;
+  clear: both;
+  padding: 10px 0;
+}
+
+.size ul li
+{
+  background-color: rgba(168,30,34,.8);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.size ul li:hover
+{
+  background-color: #ebebeb;
+}
+
+.Size5
+{
+  width: 20px;
+  height: 20px;
+}
+
+.Size10
+{
+  width: 30px;
+  height: 30px;
+}
+
+.Size15
+{
+  width: 40px;
+  height: 40px;
+}
+
+.size:hover
+{
+  
+}
+
+.colour:hover
+{
+  
+}
+
+.eraser,.export,#nuke,.brush
+{
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eraser
+{
+  background-image: url("../images/paint/eraser.svg");
+}
+
+.eraser:hover
+{
+  background-image: url("../images/paint/eraserHover.svg");
+}
+
+.export
+{
+  background-image: url("../images/paint/export.svg");
+}
+
+.export:hover
+{
+  background-image: url("../images/paint/exportHover.svg");
+}
+
+#nuke
+{
+  background-image: url("../images/paint/clear.svg");
+}
+
+#nuke:hover
+{
+  background-image: url("../images/paint/clearHover.svg");
+}
+
+.brush
+{
+  background-image: url("../images/paint/paint.svg");
+}
+
+.brush:hover
+{
+  background-image: url("../images/paint/paintHover.svg");
+}
+
+.colour, .size
+{
+  width: 50%;
+  float: left;
+}
+
+.colour ul li
+{
+  width: 10%;
+  height: 65px;
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+
+.purple {background-color: #9C27B0;}
+.blue {background-color: #03A9F4;}
+.green {background-color: #4CAF50;}
+.gold {background-color: #FFC107;}
+.orange {background-color: #FF5722;}
+.pink {background-color:#E91E63;}
+.red {background-color:#a81e22;}
+.grey {background-color:#607D8B;}
+.darkGrey {background-color:#333333;}
+.black {background-color:#000000;}
+
+/*CANVAS*/
 
 /*Important*/

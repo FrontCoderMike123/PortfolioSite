@@ -1,3 +1,38 @@
 <section class="containers" id="biography">
-	<h2 class="hidden">Biography</h2>
+	<h2 class="hidden">Michel Beaubien Biography</h2>
+	<div id="developer">
+		<img src="images/bio/me.jpg" alt="Michel Beaubien - Developer"/>
+		<p>I am Michel Beaubien. I was born &amp; raised in a small town up North named Elliot-Lake, Ontario. I moved to London, Ontario in the Summer of 2013. That Fall I was attending Fanshawe Colleges Interactive Media Design &amp; Production program. It wasn't long until I found out that I wanted to be a Front End developer. I fell in love with code. I graduated that program &amp; in the following Fall I was attending Fanshawe Colleges Interactive Media Specialist program. It's nice to see those two diplomas! I am a hard worker, find out.</p>
+	</div>
+	<div id="responsive">
+		<h3>Responsive Web Design</h3>
+		<object data="images/bio/responsive.svg">
+			<img src="images/bio/responsive.png" alt="Responsive Design"/>
+		</object>
+	</div>
+	<div id="skills">
+		<h3>Skills</h3>
+		<ul>
+			<li data-ng-repeat="skill in skills">
+				<object data="{{skill.SVG}}">
+					<img data-ng-src="{{skill.PNG}}" alt="{{skill.Name}}"/>
+				</object>
+			</li>
+		</ul>
+	</div>
+	<div id="tools">
+		<h3>Tools</h3>
+		<ul>
+			<li data-ng-repeat="tool in tools">
+				<object data="{{tool.SVG}}">
+					<img data-ng-src="{{tool.PNG}}" alt="{{tool.Name}}"/>
+				</object>
+			</li>
+		</ul>
+	</div>
+
+	<div id="fresh">
+		<p>Friendship . Remains . Eternal . Stop . Hating</p>
+	</div>
+
 </section>

@@ -2,7 +2,7 @@
 	require_once('../includes/redirect.php');
 
 	if(isset($_POST['submit'])) {
-        $direct = "../views/thankyou.html";
+        $direct = "#/thankyou.html";
         $name = $_POST['name'];
         $tel = trim($_POST['tel']);
         $city = $_POST['city'];
@@ -57,19 +57,17 @@
         </div>
 		</div>
 
-		<textarea type="message" onkeyup="adjust_textarea(this)" placeholder="Message Me"></textarea>
+		<textarea type="message" name="message" onkeyup="adjust_textarea(this)" placeholder="Message Me"></textarea>
 
 		<input id="formSubmit" type="submit" name="submit" value="Submit" title="Submit"/>
 	</form>
 
-	<div id="resumeHolder">
-	<a class="resumeLink" href="images/resumes/MichelBeaubien_Resume.pdf" target="onblank"
-	type="application/octet-stream" download="MichelBeaubien_Resume.pdf">
-		Download Resume
-	</a>
-	</div>
-
 </section>
+
+<div id="resumeHolder">
+<p>Don't forget to <a class="resumeLink" href="images/resumes/MichelBeaubien_Resume.pdf" target="onblank"
+type="application/octet-stream" download="MichelBeaubien_Resume.pdf">Download</a> my Resume!</p>
+</div>
 
 <script type="text/javascript">
 function adjust_textarea(h) {
