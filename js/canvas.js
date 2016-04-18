@@ -46,7 +46,8 @@
 	paper.height = stageHeight;
 	stage.addChild(paper);
 
-	var brush = new createjs.Bitmap("images/tools/mainBrush.png");
+	var brush = new createjs.Bitmap("images/paint/userBrush.svg");
+	var eraserPic = new createjs.Bitmap('images/paint/eraser.svg');
 	stage.addChild(brush);
 
 	//VARIABLES//
@@ -55,26 +56,26 @@
 
 	function highlightBrush() {
 		if(brushButton != null){
-			brushButton.style.background = "#a81e22";
-			brushButton.style.backgroundImage = "url(./images/icons/smWhiteBrush.png)";
+			brushButton.style.backgroundColor = "#aa1111";
+			brushButton.style.backgroundImage = "url(./images/paint/paintHover.svg)";
 			brushButton.style.backgroundRepeat = "no-repeat";
 			brushButton.style.backgroundPosition = "center";
-			eraserButton.style.background = "#ebebeb";
-			eraserButton.style.backgroundImage = "url(./images/icons/smPinkEraser.png)";
+			eraserButton.style.backgroundColor = "#280e0e";
+			eraserButton.style.backgroundImage = "url(./images/paint/eraser.svg)";
 			eraserButton.style.backgroundRepeat = "no-repeat";
 			eraserButton.style.backgroundPosition = "center";
-			brush.strokeSize = 1; strokeColour = "#a81e22";
+			brush.strokeSize = 1; strokeColour = "#aa1111";
 		}
 	}
 
 	function highlightEraser() {
 		if(eraserButton != null) {
-			eraserButton.style.background = "#a81e22";
-			eraserButton.style.backgroundImage = "url(./images/icons/smWhiteEraser.png)";
+			eraserButton.style.background = "#aa1111";
+			eraserButton.style.backgroundImage = "url(./images/paint/eraserHover.svg)";
 			eraserButton.style.backgroundRepeat = "no-repeat";
 			eraserButton.style.backgroundPosition = "center";
-			brushButton.style.background = "#ebebeb";
-			brushButton.style.backgroundImage = "url(./images/icons/smPinkBrush.png)";
+			brushButton.style.background = "#280e0e";
+			brushButton.style.backgroundImage = "url(./images/paint/paint.svg)";
 			brushButton.style.backgroundRepeat = "no-repeat";
 			brushButton.style.backgroundPosition = "center";
 		}
@@ -164,8 +165,12 @@
 
 	function toImage() {
 		var canvasExport = document.querySelector("#myCanvas");
-		var myImage = canvasExport.toDataURL("image/png");
+		var myImage = canvasExport.toDataURL("image/jpg");
 		window.location = myImage;
+		brushButton.style.backgroundColor = '#280e0e';
+		brushButton.style.backgroundImage = 'url(./images/paint/paint.svg)';
+		eraserButton.style.backgroundColor = '#280e0e';
+		eraserButton.style.backgroundImage = 'url(./images/paint/eraser.svg)';
 	}
 
 	var nukeButton = document.querySelector("#nuke");
@@ -175,6 +180,10 @@
 			paper.graphics.clear();
 			stage.update();
 			stage.addChild(brush);
+			brushButton.style.backgroundColor = '#280e0e';
+			brushButton.style.backgroundImage = 'url(./images/paint/paint.svg)';
+			eraserButton.style.backgroundColor = '#280e0e';
+			eraserButton.style.backgroundImage = 'url(./images/paint/eraser.svg)';
 		}else{
 			return false;
 		}
@@ -186,21 +195,21 @@
 
 	for (var size = 0; size<sizeSelector.length; size++) {
 		sizeSelector[size].addEventListener('click', function() {
+			var sizeChosen = document.querySelector('#chosenSize');
 			var getStrokeWidth = window.getComputedStyle(this).getPropertyValue('width');
 			strokeSize = getStrokeWidth.substring(0, getStrokeWidth.length-2);
 			for(size = 0; size<sizeSelector.length; size++) {
 				sizeSelector[size].style.border = 'none';
 				sizeSelector[size].style.transition = "all 0.3s ease-in-out";
 			}
-			this.style.boxSizing = 'border-box';
-			this.style.border = '3px solid #a81e22';
+			sizeChosen.innerHTML = ' - '+strokeSize;
 		}, false);
 	}
 
 
 	for(var colour = 0; colour<colorSelected.length; colour++) {
 		colorSelected[colour].addEventListener("click", function() {
-			var chosenColor = document.querySelector('.chosen');
+			var chosenColor = document.querySelector('#chosenColour');
 			strokeColour = window.getComputedStyle(this).getPropertyValue('background-color');
 			if(strokeColour == 'rgb(156, 39, 176)'){strokeColour = 'Purple';}
 			if(strokeColour == 'rgb(3, 169, 244)'){strokeColour = 'Light Blue';}

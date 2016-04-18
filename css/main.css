@@ -884,6 +884,7 @@ footer
 {
   border: 4px solid #280e0e;
   clear: both;
+  background-color: white;
 }
 
 #buttonsHolder
@@ -935,17 +936,55 @@ footer
   padding: 10px 0;
 }
 
+.size ul
+{
+  display: flex;
+  height: 65px;
+  align-items: center;
+  width: 100%;
+}
+
 .size ul li
 {
-  background-color: rgba(168,30,34,.8);
+  background-color: #ebebeb;
   border-radius: 50%;
-  display: inline-block;
-  margin: 10px;
+  align-self: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.size ul li:first-child
+{
+  margin: 0;
 }
 
 .size ul li:hover
 {
-  background-color: #ebebeb;
+  background-color: #aa1111;
+}
+
+.Size1
+{
+  width: 4px;
+  height: 4x;
+}
+
+.Size2
+{
+  width: 8px;
+  height: 8px;
+}
+
+.Size3
+{
+  width: 12px;
+  height: 12px;
+}
+
+.Size4
+{
+  width: 16px;
+  height: 16px;
 }
 
 .Size5
@@ -954,13 +993,31 @@ footer
   height: 20px;
 }
 
-.Size10
+.Size6
 {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
-.Size15
+.Size7
+{
+  width: 28px;
+  height: 28px;
+}
+
+.Size8
+{
+  width: 32px;
+  height: 32px;
+}
+
+.Size9
+{
+  width: 36px;
+  height: 36px;
+}
+
+.Size10
 {
   width: 40px;
   height: 40px;
